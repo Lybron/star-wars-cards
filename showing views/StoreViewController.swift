@@ -8,10 +8,28 @@
 
 import UIKit
 
-class StoreViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class StoreViewController: UICollectionViewController {
   
   // MARK: Properties
-  let cellIdentifier = "Cell"
+  internal let cellIdentifier = "Cell"
+//  internal var flowLayout: UICollectionViewFlowLayout?
+  
+  // MARK: View Lifecycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    configureCollectionView()
+  }
+  
+  internal func configureCollectionView() {
+    let space: CGFloat = 3.0
+    let dimension = (view.frame.size.width - (2 * space)) / 3.0
+    
+//    collectionView!.collectionViewLayout.minimumInteritemSpacing = space
+//    collectionView!.collectionViewLayout.minimumLineSpacing = space
+//    collectionView!.collectionViewLayout.itemSize = CGSize(width: dimension, height: dimension)
+    
+//    collectionView!.collectionViewLayout = flowLayout
+  }
   
   // MARK: Datasource
   func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -23,11 +41,14 @@ class StoreViewController: UIViewController, UICollectionViewDelegate, UICollect
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath)
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! StoreCollectionViewCell
     
-    return UICollectionViewCell()
+    return cell
   }
   
   // MARK: Delegate
-  
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+    collectionView.deselectItem(at: indexPath, animated: true)
+  }
 }

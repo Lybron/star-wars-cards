@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E70C4A51EF6437200A2B5AF /* StoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E70C4A41EF6437200A2B5AF /* StoreCollectionViewCell.swift */; };
+		7E70C4A91EF648C300A2B5AF /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E70C4A81EF648C300A2B5AF /* StoreManager.swift */; };
 		E20F02121EC3C09900AD3181 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F02111EC3C09900AD3181 /* StoreViewController.swift */; };
 		E215E6431EACEF9000A6878D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E215E6421EACEF9000A6878D /* AppDelegate.swift */; };
 		E215E6451EACEF9000A6878D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E215E6441EACEF9000A6878D /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E70C4A41EF6437200A2B5AF /* StoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		7E70C4A81EF648C300A2B5AF /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		E20F02111EC3C09900AD3181 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		E215E63F1EACEF9000A6878D /* STAR WARS CARDS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STAR WARS CARDS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E215E6421EACEF9000A6878D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				E215E6701EACFD7100A6878D /* SecondViewController.swift */,
 				E27608801EC89F71004E5CFD /* BattleViewController.swift */,
 				E20F02111EC3C09900AD3181 /* StoreViewController.swift */,
+				7E70C4A41EF6437200A2B5AF /* StoreCollectionViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				E29EDF7E1ED9C73D00B8324A /* GameManager.swift */,
+				7E70C4A81EF648C300A2B5AF /* StoreManager.swift */,
 				E27608851EC8A117004E5CFD /* UserProfile.swift */,
 				E27608881EC8A918004E5CFD /* Session.swift */,
 				E27608831EC8A056004E5CFD /* PointsCalculator.swift */,
@@ -316,8 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E20F02121EC3C09900AD3181 /* StoreViewController.swift in Sources */,
+				7E70C4A91EF648C300A2B5AF /* StoreManager.swift in Sources */,
 				E29EDF7F1ED9C73D00B8324A /* GameManager.swift in Sources */,
 				E215E6711EACFD7100A6878D /* SecondViewController.swift in Sources */,
+				7E70C4A51EF6437200A2B5AF /* StoreCollectionViewCell.swift in Sources */,
 				E27608861EC8A117004E5CFD /* UserProfile.swift in Sources */,
 				E29EDF5D1ED1DEE700B8324A /* SWCConstants.swift in Sources */,
 				E27608841EC8A056004E5CFD /* PointsCalculator.swift in Sources */,
@@ -586,6 +594,7 @@
 				E29EDF6F1ED9C2B700B8324A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E29EDF7B1ED9C2C300B8324A /* Build configuration list for PBXNativeTarget "STAR WARS CARDSUITests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +603,7 @@
 				E29EDF7D1ED9C2C300B8324A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
