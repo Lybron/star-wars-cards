@@ -19,4 +19,12 @@ struct StoreManager {
   public func itemsData() {
     
   }
+  
+  public func villainsData() {
+    
+  }
+  
+  public func heroesData() {
+    
+  }
 }

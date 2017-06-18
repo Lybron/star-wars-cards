@@ -210,7 +210,7 @@
                                             <color key="titleColor" red="1" green="0.78514868983104591" blue="0.21735350409677445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="UTT-ZX-1dL" kind="show" id="Kdr-PA-Fgb"/>
+                                            <segue destination="6ig-NP-3ys" kind="show" id="Aq0-fw-iEM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-e7-C8e">
@@ -701,81 +701,121 @@
             </objects>
             <point key="canvasLocation" x="6410.9375" y="1863.8671874999998"/>
         </scene>
-        <!--Ships-->
-        <scene sceneID="ldR-De-Vt0">
+        <!--Store Front View Controller-->
+        <scene sceneID="Nlp-61-fQi">
             <objects>
-                <viewController id="TwB-P5-PQv" sceneMemberID="viewController">
+                <viewController id="6ig-NP-3ys" customClass="StoreFrontViewController" customModule="STAR_WARS_CARDS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="si4-lF-ioQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="QfS-RT-5ey"/>
+                        <viewControllerLayoutGuide type="top" id="HDD-TG-Yda"/>
+                        <viewControllerLayoutGuide type="bottom" id="HjB-dR-Ds7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aWd-Km-bke">
+                    <view key="view" contentMode="scaleToFill" id="a1S-vP-KGY">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Ships" id="yoD-Yn-M4f"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qL3-mZ-bMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3997" y="1966"/>
-        </scene>
-        <!--Soldiers & Items-->
-        <scene sceneID="nwB-ZP-c0M">
-            <objects>
-                <viewController id="wqX-v3-3Yi" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vuP-fS-6ie"/>
-                        <viewControllerLayoutGuide type="bottom" id="jhy-Ns-xP6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OjA-vs-X10">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iVH-FV-NPo">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cAe-j1-7Fn">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="512"/>
+                                        <subviews>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJb-SI-6at" userLabel="Heroes Control">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="512"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k43-WK-aGo">
+                                                        <rect key="frame" x="129" y="226" width="126" height="60"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="Heroes"/>
+                                                        <connections>
+                                                            <action selector="selectHeroes:" destination="6ig-NP-3ys" eventType="touchUpInside" id="t3I-c7-46H"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.25523115730000001" green="1" blue="0.25244265700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="k43-WK-aGo" firstAttribute="centerX" secondItem="OJb-SI-6at" secondAttribute="centerX" id="Jjm-oH-3Hv"/>
+                                                    <constraint firstItem="k43-WK-aGo" firstAttribute="centerY" secondItem="OJb-SI-6at" secondAttribute="centerY" id="piJ-lZ-F21"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-tN-aGh" userLabel="Villains Control">
+                                                <rect key="frame" x="384" y="0.0" width="384" height="512"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LM8-M4-Tas">
+                                                        <rect key="frame" x="130" y="226" width="124" height="60"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="Villains"/>
+                                                        <connections>
+                                                            <action selector="selectVillains:" destination="6ig-NP-3ys" eventType="touchUpInside" id="P4E-EF-Cek"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="LM8-M4-Tas" firstAttribute="centerX" secondItem="9Pq-tN-aGh" secondAttribute="centerX" id="5tS-WP-8mN"/>
+                                                    <constraint firstItem="LM8-M4-Tas" firstAttribute="centerY" secondItem="9Pq-tN-aGh" secondAttribute="centerY" id="tPR-dE-xqb"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CMV-fU-QGY">
+                                        <rect key="frame" x="0.0" y="512" width="768" height="512"/>
+                                        <subviews>
+                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWG-r9-9Nr" userLabel="Ships Control">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="512"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UE-S1-czx">
+                                                        <rect key="frame" x="142.5" y="226" width="99" height="60"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="Ships"/>
+                                                        <connections>
+                                                            <action selector="selectShips:" destination="6ig-NP-3ys" eventType="touchUpInside" id="DJi-bq-17v"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.78514868979999997" blue="0.21735350410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="7UE-S1-czx" firstAttribute="centerY" secondItem="kWG-r9-9Nr" secondAttribute="centerY" id="AjF-MH-tA7"/>
+                                                    <constraint firstItem="7UE-S1-czx" firstAttribute="centerX" secondItem="kWG-r9-9Nr" secondAttribute="centerX" id="rPw-WX-w0R"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ho-yb-ghg" userLabel="Solldiers Control">
+                                                <rect key="frame" x="384" y="0.0" width="384" height="512"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLO-jc-wp4">
+                                                        <rect key="frame" x="49.5" y="226" width="285" height="60"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <state key="normal" title="Soldiers &amp; Items"/>
+                                                        <connections>
+                                                            <action selector="selectItems:" destination="6ig-NP-3ys" eventType="touchUpInside" id="GYI-aD-V3O"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="VLO-jc-wp4" firstAttribute="centerX" secondItem="3Ho-yb-ghg" secondAttribute="centerX" id="MsP-4J-WwG"/>
+                                                    <constraint firstItem="VLO-jc-wp4" firstAttribute="centerY" secondItem="3Ho-yb-ghg" secondAttribute="centerY" id="n59-uE-oft"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.25523115730000001" green="1" blue="0.25244265700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iVH-FV-NPo" firstAttribute="leading" secondItem="a1S-vP-KGY" secondAttribute="leading" id="SOz-Nq-jBJ"/>
+                            <constraint firstAttribute="trailing" secondItem="iVH-FV-NPo" secondAttribute="trailing" id="U63-hG-A11"/>
+                            <constraint firstItem="HjB-dR-Ds7" firstAttribute="top" secondItem="iVH-FV-NPo" secondAttribute="bottom" id="heO-b7-K0w"/>
+                            <constraint firstItem="iVH-FV-NPo" firstAttribute="top" secondItem="a1S-vP-KGY" secondAttribute="top" id="ubb-8e-myK"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Soldiers &amp; Items" id="FUw-KW-Wvj"/>
+                    <connections>
+                        <segue destination="nw2-pj-HnP" kind="show" identifier="storeCollectionSegue" id="AJk-wo-qx2"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bTE-WV-Pg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Un-o0-fGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4342" y="2681"/>
-        </scene>
-        <!--Villains-->
-        <scene sceneID="P73-ok-dYl">
-            <objects>
-                <viewController id="Boe-xC-9cc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4zL-YO-c1P"/>
-                        <viewControllerLayoutGuide type="bottom" id="xfP-Vq-7bs"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wRT-VZ-eb0">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.78514868979999997" blue="0.21735350410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Villains" id="lB1-ZO-Aur"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytl-x1-Sau" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5010" y="2681"/>
-        </scene>
-        <!--Heroes-->
-        <scene sceneID="Pq9-fB-XyN">
-            <objects>
-                <viewController id="tHF-sU-NnS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vlo-B1-E0H"/>
-                        <viewControllerLayoutGuide type="bottom" id="wIS-92-60m"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Oh7-DF-vje">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Heroes" id="3WU-NW-cFQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UZ1-fq-D0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5718" y="2681"/>
+            <point key="canvasLocation" x="3652" y="2061"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gej-Xa-0XL">
@@ -1157,28 +1197,71 @@
             </objects>
             <point key="canvasLocation" x="6088" y="251"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Tan-2l-ugM">
+        <!--Store View Controller-->
+        <scene sceneID="8h4-Pg-zSO">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UTT-ZX-1dL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="4Hq-2L-yL4">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="TwB-P5-PQv" kind="relationship" relationship="viewControllers" id="Btc-OO-3UQ"/>
-                        <segue destination="tHF-sU-NnS" kind="relationship" relationship="viewControllers" id="I1u-10-hBb"/>
-                        <segue destination="Boe-xC-9cc" kind="relationship" relationship="viewControllers" id="txx-Gv-JMI"/>
-                        <segue destination="wqX-v3-3Yi" kind="relationship" relationship="viewControllers" id="mEv-zE-l2Y"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="buG-0u-EC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <collectionViewController id="nw2-pj-HnP" customClass="StoreViewController" customModule="STAR_WARS_CARDS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="jY7-LV-zkn">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WO1-YQ-uu0">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="0AL-Lv-jKx" customClass="StoreCollectionViewCell" customModule="STAR_WARS_CARDS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Destroyer" translatesAutoresizingMaskIntoConstraints="NO" id="BDN-iK-WiP">
+                                            <rect key="frame" x="20" y="8" width="160" height="118"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thermal Imploder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1F-La-er6">
+                                            <rect key="frame" x="33" y="134" width="135" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000 XP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOm-B9-3iu">
+                                            <rect key="frame" x="61" y="159" width="79" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="BDN-iK-WiP" firstAttribute="leading" secondItem="0AL-Lv-jKx" secondAttribute="leadingMargin" constant="12" id="BJz-vf-2ym"/>
+                                    <constraint firstItem="n1F-La-er6" firstAttribute="top" secondItem="BDN-iK-WiP" secondAttribute="bottom" constant="8" id="Bmp-Jh-Aop"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="BDN-iK-WiP" secondAttribute="trailing" constant="12" id="GrS-Sp-bUk"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="IOm-B9-3iu" secondAttribute="bottom" constant="12" id="Ih6-co-Wsr"/>
+                                    <constraint firstItem="n1F-La-er6" firstAttribute="centerX" secondItem="0AL-Lv-jKx" secondAttribute="centerX" id="S1M-fo-Mkg"/>
+                                    <constraint firstItem="IOm-B9-3iu" firstAttribute="top" secondItem="n1F-La-er6" secondAttribute="bottom" constant="4" id="Wpf-y8-vfg"/>
+                                    <constraint firstItem="BDN-iK-WiP" firstAttribute="top" secondItem="0AL-Lv-jKx" secondAttribute="topMargin" id="fhz-U3-1qN"/>
+                                    <constraint firstItem="IOm-B9-3iu" firstAttribute="centerX" secondItem="0AL-Lv-jKx" secondAttribute="centerX" id="mF9-7x-OCW"/>
+                                </constraints>
+                                <size key="customSize" width="200" height="200"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="nw2-pj-HnP" id="wOy-Jw-igV"/>
+                            <outlet property="delegate" destination="nw2-pj-HnP" id="iSl-Rv-CdI"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxX-vZ-As5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4872.65625" y="1889.6484374999998"/>
+            <point key="canvasLocation" x="4647" y="3305"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Destroyer" width="1600" height="800"/>
         <image name="boba-fett" width="259" height="194"/>
         <image name="ground battle" width="1920" height="1080"/>
         <image name="space battle" width="2727" height="1679"/>

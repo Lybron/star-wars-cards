@@ -21,8 +21,8 @@ class StoreViewController: UICollectionViewController {
   }
   
   internal func configureCollectionView() {
-    let space: CGFloat = 3.0
-    let dimension = (view.frame.size.width - (2 * space)) / 3.0
+//    let space: CGFloat = 3.0
+//    let dimension = (view.frame.size.width - (2 * space)) / 3.0
     
 //    collectionView!.collectionViewLayout.minimumInteritemSpacing = space
 //    collectionView!.collectionViewLayout.minimumLineSpacing = space
@@ -32,22 +32,22 @@ class StoreViewController: UICollectionViewController {
   }
   
   // MARK: Datasource
-  func numberOfSections(in collectionView: UICollectionView) -> Int {
-    return 0
+  override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    return 1
   }
   
-  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 0
+  override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return 1
   }
   
-  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+  override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! StoreCollectionViewCell
     
     return cell
   }
   
   // MARK: Delegate
-  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     
     collectionView.deselectItem(at: indexPath, animated: true)
   }

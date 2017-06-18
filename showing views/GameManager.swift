@@ -18,7 +18,7 @@ struct GameManager {
     if ships.isEmpty {
       var newShips = [Spaceship]()
       
-      for i in 0...9 {
+      for _ in 0...9 {
         let ship = Spaceship(name: "Destoyer", image: #imageLiteral(resourceName: "Destroyer"), position: CGPoint(x: 0.0, y: 0.0))
         newShips.append(ship)
       }
