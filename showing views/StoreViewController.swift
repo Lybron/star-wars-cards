@@ -14,6 +14,10 @@ class StoreViewController: UICollectionViewController {
   internal let cellIdentifier = "Cell"
 //  internal var flowLayout: UICollectionViewFlowLayout?
   
+  @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+  
+  private let ships = StoreManager.shared.shipsData()
+  
   // MARK: View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,14 +25,14 @@ class StoreViewController: UICollectionViewController {
   }
   
   internal func configureCollectionView() {
-//    let space: CGFloat = 3.0
-//    let dimension = (view.frame.size.width - (2 * space)) / 3.0
+    let space: CGFloat = 3.0
+    let dimension = (view.frame.size.width - (2 * space)) / 3.0
     
-//    collectionView!.collectionViewLayout.minimumInteritemSpacing = space
-//    collectionView!.collectionViewLayout.minimumLineSpacing = space
-//    collectionView!.collectionViewLayout.itemSize = CGSize(width: dimension, height: dimension)
+    flowLayout.minimumInteritemSpacing = space
+    flowLayout.minimumLineSpacing = space
+    flowLayout.itemSize = CGSize(width: dimension, height: dimension)
     
-//    collectionView!.collectionViewLayout = flowLayout
+    collectionView?.collectionViewLayout = flowLayout
   }
   
   // MARK: Datasource
@@ -37,11 +41,19 @@ class StoreViewController: UICollectionViewController {
   }
   
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 1
+    return ships.count
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! StoreCollectionViewCell
+    
+    let ship = ships[indexPath.row]
+    
+//    let ship = Spaceship(name: "Executor", image: UIImage(named: "Executor")!, price: 10000)
+    
+    cell.titleLabel.text = ship.name
+    cell.imageView.image = ship.image
+    cell.priceLabel.text = "\(ship.price) XP"
     
     return cell
   }
@@ -51,4 +63,5 @@ class StoreViewController: UICollectionViewController {
     
     collectionView.deselectItem(at: indexPath, animated: true)
   }
+  
 }

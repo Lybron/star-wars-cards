@@ -19,7 +19,7 @@ struct GameManager {
       var newShips = [Spaceship]()
       
       for _ in 0...9 {
-        let ship = Spaceship(name: "Destoyer", image: #imageLiteral(resourceName: "Destroyer"), position: CGPoint(x: 0.0, y: 0.0))
+        let ship = Spaceship(name: "Destoyer", image: #imageLiteral(resourceName: "Destroyer"), price: 0.00)
         newShips.append(ship)
       }
       
