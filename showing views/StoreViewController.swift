@@ -16,7 +16,7 @@ class StoreViewController: UICollectionViewController {
   
   @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
   
-  private let ships = StoreManager.shared.shipsData()
+  private let items = StoreManager.shared.shipsData()
   
   // MARK: View Lifecycle
   override func viewDidLoad() {
@@ -41,13 +41,13 @@ class StoreViewController: UICollectionViewController {
   }
   
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return ships.count
+    return items.count
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! StoreCollectionViewCell
     
-    let ship = ships[indexPath.row]
+    let ship = items[indexPath.row]
     
 //    let ship = Spaceship(name: "Executor", image: UIImage(named: "Executor")!, price: 10000)
     

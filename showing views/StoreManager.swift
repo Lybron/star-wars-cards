@@ -11,9 +11,29 @@ import UIKit
 
 struct StoreManager {
   
+  public enum SWCType {
+    case spaceShip
+    case hero
+    case villain
+    case soldier
+  }
+  
   public static let shared = StoreManager()
   
   // MARK: Store Data Source
+//  public func getItems(_ catergory: SWCType) -> [SWCObject] {
+//    switch catergory {
+//      case .spaceShip
+//        return shipsData()
+//      case .hero
+//        return heroesData()
+//      case .villain
+//        return villainsData()
+//      case .soldier
+//        return soldierData()
+//    }
+//  }
+  
   public func shipsData() -> [Spaceship] {
     var ships: [Spaceship] = []
     
@@ -21,23 +41,33 @@ struct StoreManager {
     
     let prices: [NSNumber] = [1000, 10000, 20000, 30000, 50000]
     
-//    for idx, name in names.count {
-//      let ship = Spaceship(name: names[i], image: UIImage(named: names[i])!, price: prices[i])
-//      ships.append(ship)
-//    }
+    for (i, name) in names.enumerated() {
+      let ship = Spaceship(name: name, image: UIImage(named: name)!, price: prices[i])
+      ships.append(ship)
+    }
     
     return ships
   }
   
-  public func itemsData() {
+//  public func soldierData() -> [Soldier] {
+//    
+//  }
+  
+  public func villainsData() -> [Villain] {
+    var villains = [Villain]()
     
+    let names = ["Boba Fett", "Jango Fett", "Dengar", "Darth Vader"]
+    let prices :  [NSNumber] = [ 90000, 30000, 50000, 1000000]
+    
+    for (i, name) in names.enumerated() {
+      let villain = Villain(name: name, image: UIImage(named: name)!, price: prices[i])
+      villains.append(villain)
+    }
+    
+    return villains
   }
   
-  public func villainsData() {
-    
-  }
-  
-  public func heroesData() {
-    
-  }
+//  public func heroesData() -> [Hero] {
+//    
+//  }
 }
