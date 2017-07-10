@@ -42,7 +42,23 @@ class StoreFrontViewController: UIViewController {
    // In a storyboard-based application, you will often want to do a little preparation before navigation
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "storeCollectionSegue" {
-      
+      if let button = sender as? UIButton {
+        
+        let storeVC = segue.destination as! StoreViewController
+                
+        switch button.tag {
+          case 1:
+            storeVC.category = .hero
+          case 2:
+            storeVC.category = .villain
+          case 3:
+            storeVC.category = .ship
+          case 4:
+            storeVC.category = .soldier
+          default:
+            break
+        }
+      }
     }
    }
   

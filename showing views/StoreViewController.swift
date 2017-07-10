@@ -12,16 +12,21 @@ class StoreViewController: UICollectionViewController {
   
   // MARK: Properties
   internal let cellIdentifier = "Cell"
-//  internal var flowLayout: UICollectionViewFlowLayout?
   
+  private var items: [SWCObject] = []
+  
+  public var category: SWCType?
+
+  // MARK: IBOutlets
   @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
-  
-  private let items = StoreManager.shared.shipsData()
   
   // MARK: View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     configureCollectionView()
+    
+    items = StoreManager.shared.getItems(category!)
   }
   
   internal func configureCollectionView() {
@@ -47,13 +52,12 @@ class StoreViewController: UICollectionViewController {
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! StoreCollectionViewCell
     
-    let ship = items[indexPath.row]
-    
-//    let ship = Spaceship(name: "Executor", image: UIImage(named: "Executor")!, price: 10000)
-    
-    cell.titleLabel.text = ship.name
-    cell.imageView.image = ship.image
-    cell.priceLabel.text = "\(ship.price) XP"
+    let item = items[indexPath.row]
+        
+    cell.titleLabel.text = item.name
+    cell.imageView.image = item.image
+    cell.imageView.contentMode = .scaleAspectFit
+    cell.priceLabel.text = "\(item.price) XP"
     
     return cell
   }

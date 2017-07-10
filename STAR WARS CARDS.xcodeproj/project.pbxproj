@@ -162,8 +162,8 @@
 				E215E6441EACEF9000A6878D /* ViewController.swift */,
 				E215E6701EACFD7100A6878D /* SecondViewController.swift */,
 				E27608801EC89F71004E5CFD /* BattleViewController.swift */,
-				E20F02111EC3C09900AD3181 /* StoreViewController.swift */,
 				E22A7EAB1EF6C953005234DE /* StoreFrontViewController.swift */,
+				E20F02111EC3C09900AD3181 /* StoreViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

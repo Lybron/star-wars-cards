@@ -9,21 +9,22 @@
 import Foundation
 import UIKit
 
+
+public enum SWCType {
+  case ship
+  case hero
+  case villain
+  case soldier
+}
+
 struct StoreManager {
-  
-  public enum SWCType {
-    case spaceShip
-    case hero
-    case villain
-    case soldier
-  }
   
   public static let shared = StoreManager()
   
   // MARK: Store Data Source
   public func getItems(_ catergory: SWCType) -> [SWCObject] {
     switch catergory {
-    case .spaceShip:
+    case .ship:
       return shipsData()
     case .hero:
       return heroesData()
@@ -34,7 +35,7 @@ struct StoreManager {
     }
   }
   
-  public func shipsData() -> [Spaceship] {
+  private func shipsData() -> [Spaceship] {
     var ships: [Spaceship] = []
     
     let names = ["Blockade Runner", "Medical Fragment", "Destroyer", "Executor", "Eclipse"]
@@ -49,11 +50,11 @@ struct StoreManager {
     return ships
   }
   
-  public func soldierData() -> [Soldier] {
+  private func soldierData() -> [Soldier] {
     var soldiers: [Soldier] = []
     
     // TODO: Get list of names and prices
-    let names = [""]
+    let names = ["Fathead"]
     let prices: [NSNumber] = [10000]
     
     for (i, name) in names.enumerated() {
@@ -64,7 +65,7 @@ struct StoreManager {
     return soldiers
   }
   
-  public func villainsData() -> [Villain] {
+  private func villainsData() -> [Villain] {
     var villains: [Villain] = []
     
     let names = ["Boba Fett", "Jango Fett", "Dengar", "Darth Vader"]
@@ -78,7 +79,7 @@ struct StoreManager {
     return villains
   }
   
-  public func heroesData() -> [Hero] {
+  private func heroesData() -> [Hero] {
     var heroes: [Hero] = []
     
     let names = ["Luke Skywalker"]
