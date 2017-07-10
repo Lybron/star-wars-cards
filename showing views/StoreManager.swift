@@ -21,18 +21,18 @@ struct StoreManager {
   public static let shared = StoreManager()
   
   // MARK: Store Data Source
-//  public func getItems(_ catergory: SWCType) -> [SWCObject] {
-//    switch catergory {
-//      case .spaceShip
-//        return shipsData()
-//      case .hero
-//        return heroesData()
-//      case .villain
-//        return villainsData()
-//      case .soldier
-//        return soldierData()
-//    }
-//  }
+  public func getItems(_ catergory: SWCType) -> [SWCObject] {
+    switch catergory {
+    case .spaceShip:
+      return shipsData()
+    case .hero:
+      return heroesData()
+    case .villain:
+      return villainsData()
+    case .soldier:
+      return soldierData()
+    }
+  }
   
   public func shipsData() -> [Spaceship] {
     var ships: [Spaceship] = []
@@ -49,12 +49,23 @@ struct StoreManager {
     return ships
   }
   
-//  public func soldierData() -> [Soldier] {
-//    
-//  }
+  public func soldierData() -> [Soldier] {
+    var soldiers: [Soldier] = []
+    
+    // TODO: Get list of names and prices
+    let names = [""]
+    let prices: [NSNumber] = [10000]
+    
+    for (i, name) in names.enumerated() {
+      let soldier = Soldier(name: name, image: UIImage(named: name)!, price: prices[i])
+      soldiers.append(soldier)
+    }
+    
+    return soldiers
+  }
   
   public func villainsData() -> [Villain] {
-    var villains = [Villain]()
+    var villains: [Villain] = []
     
     let names = ["Boba Fett", "Jango Fett", "Dengar", "Darth Vader"]
     let prices :  [NSNumber] = [ 90000, 30000, 50000, 1000000]
@@ -67,7 +78,17 @@ struct StoreManager {
     return villains
   }
   
-//  public func heroesData() -> [Hero] {
-//    
-//  }
+  public func heroesData() -> [Hero] {
+    var heroes: [Hero] = []
+    
+    let names = ["Luke Skywalker"]
+    let prices: [NSNumber] = [1000000]
+    
+    for (i, name) in names.enumerated() {
+      let hero = Hero(name: name, image: UIImage(named: name)!, price: prices[i])
+      heroes.append(hero)
+    }
+    
+    return heroes
+  }
 }

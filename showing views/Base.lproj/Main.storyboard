@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-wars" translatesAutoresizingMaskIntoConstraints="NO" id="XQL-2H-z7d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Star-Wars" translatesAutoresizingMaskIntoConstraints="NO" id="XQL-2H-z7d">
                                 <rect key="frame" x="0.0" y="64" width="834" height="1048"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Jef-XS-nMD">
@@ -92,14 +92,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vader" translatesAutoresizingMaskIntoConstraints="NO" id="Lq7-5T-vWW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Darth Vader" translatesAutoresizingMaskIntoConstraints="NO" id="Lq7-5T-vWW">
                                 <rect key="frame" x="0.0" y="64" width="834" height="1048"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ThV-Qj-9x1">
                                 <rect key="frame" x="183.5" y="387.5" width="467.5" height="337.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELLO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v9-Jm-jqT">
-                                        <rect key="frame" x="162.5" y="0.0" width="142" height="54"/>
+                                        <rect key="frame" x="163" y="0.0" width="142" height="54"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                         <color key="textColor" red="0.25523115730000001" green="1" blue="0.25244265700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -117,7 +117,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UM7-sG-bZn">
-                                        <rect key="frame" x="181" y="277.5" width="105" height="60"/>
+                                        <rect key="frame" x="181.5" y="277.5" width="105" height="60"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <state key="normal" title="NEXT">
                                             <color key="titleColor" red="0.25523115730000001" green="1" blue="0.25244265700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -161,7 +161,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boba-fett" translatesAutoresizingMaskIntoConstraints="NO" id="igM-gc-FJn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boba Fett" translatesAutoresizingMaskIntoConstraints="NO" id="igM-gc-FJn">
                                 <rect key="frame" x="0.0" y="9" width="834" height="1103"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O0p-ca-VIA" userLabel="Title Stack View">
@@ -1269,11 +1269,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BG-Star-Wars" width="1400" height="914"/>
+        <image name="Boba Fett" width="259" height="194"/>
+        <image name="Darth Vader" width="1600" height="800"/>
         <image name="Destroyer" width="1600" height="800"/>
-        <image name="boba-fett" width="259" height="194"/>
         <image name="ground battle" width="1920" height="1080"/>
         <image name="space battle" width="2727" height="1679"/>
-        <image name="star-wars" width="1400" height="914"/>
-        <image name="vader" width="1600" height="800"/>
     </resources>
 </document>
