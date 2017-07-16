@@ -9,27 +9,47 @@
 import UIKit
 
 class BattleViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  
+  // MARK: Properties
+  
+  
+  // MARK: View Lifecycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    placeTiles()
+  }
+  
+  // MARK: Set Tiles
+  private func placeTiles() {
+    print("place tiles")
+    for stack in view.subviews {
+      print("found view")
+      
+      for view in stack.subviews {
+        print("stack sub: \(String(describing: view))")
+        
+        for sub in view.subviews {
+          print("sub sub: \(String(describing: sub))")
+          
+          guard let tile = sub as? UIView else {
+            print("is not grid tile")
+            continue
+          }
+          
+          let ships = StoreManager.shared.getItems(.ship)
+          
+          let shipView = UIImageView(frame: tile.frame)
+          shipView.image = ships[0].image
+          shipView.contentMode = .scaleAspectFit
+          
+          tile.addSubview(shipView)
+          print("added tile")
+        }
+      }
+      
+      
+      
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  }
+  
 }

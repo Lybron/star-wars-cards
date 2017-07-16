@@ -181,7 +181,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4RE-3Q-hgX" userLabel="Buttons Stack View">
-                                <rect key="frame" x="293.5" y="412" width="247" height="288"/>
+                                <rect key="frame" x="293.5" y="376" width="247" height="360"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udt-vh-52g">
                                         <rect key="frame" x="0.0" y="0.0" width="247" height="72"/>
@@ -193,8 +193,18 @@
                                             <segue destination="zvz-MS-nTT" kind="show" id="hre-MW-Mn0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTT-bD-LX1">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbM-L1-xg3">
                                         <rect key="frame" x="0.0" y="72" width="247" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="Tutorial">
+                                            <color key="titleColor" red="1" green="0.76947554929999995" blue="0.1998868973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mB5-yY-dIz" kind="show" action="showDetailViewController:sender:" id="uae-pN-ana"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTT-bD-LX1">
+                                        <rect key="frame" x="0.0" y="144" width="247" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="Cards">
                                             <color key="titleColor" red="1" green="0.76947554930320006" blue="0.19988689727134956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -204,7 +214,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8k-Ux-BcO">
-                                        <rect key="frame" x="0.0" y="144" width="247" height="72"/>
+                                        <rect key="frame" x="0.0" y="216" width="247" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="Store">
                                             <color key="titleColor" red="1" green="0.78514868983104591" blue="0.21735350409677445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -214,7 +224,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-e7-C8e">
-                                        <rect key="frame" x="0.0" y="216" width="247" height="72"/>
+                                        <rect key="frame" x="0.0" y="288" width="247" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" red="1" green="0.78514868979999997" blue="0.21735350410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -684,6 +694,24 @@
             <point key="canvasLocation" x="6088" y="884"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="LmR-Ba-iCh">
+            <objects>
+                <viewController id="mB5-yY-dIz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DpX-d7-lbu"/>
+                        <viewControllerLayoutGuide type="bottom" id="QWz-LA-jLp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dc2-Te-fXb">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sW-bU-6OI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4393" y="1647"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="jzg-Qh-ubc">
             <objects>
                 <viewController id="YyI-qa-nMj" sceneMemberID="viewController">
@@ -839,10 +867,10 @@
             </objects>
             <point key="canvasLocation" x="1444" y="835"/>
         </scene>
-        <!--View Controller-->
+        <!--Battle View Controller-->
         <scene sceneID="bCl-ca-aFh">
             <objects>
-                <viewController id="tyl-Ca-MQe" sceneMemberID="viewController">
+                <viewController id="tyl-Ca-MQe" customClass="BattleViewController" customModule="STAR_WARS_CARDS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u1O-fx-l0t"/>
                         <viewControllerLayoutGuide type="bottom" id="oAa-mU-dlx"/>

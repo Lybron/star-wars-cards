@@ -54,7 +54,7 @@ struct StoreManager {
     var soldiers: [Soldier] = []
     
     // TODO: Get list of names and prices
-    let names = ["Fathead"]
+    let names = ["Storm Trooper"]
     let prices: [NSNumber] = [10000]
     
     for (i, name) in names.enumerated() {
