@@ -21,6 +21,8 @@
 		E22DA9D81F127C69007B41D6 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DA9D71F127C69007B41D6 /* Hero.swift */; };
 		E22DA9DC1F127EA4007B41D6 /* Soldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DA9DB1F127EA4007B41D6 /* Soldier.swift */; };
 		E22DA9DE1F12834A007B41D6 /* Villain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DA9DD1F12834A007B41D6 /* Villain.swift */; };
+		E248F2441F24E7E50077F12C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248F2431F24E7E50077F12C /* TutorialViewController.swift */; };
+		E248F2461F24EA550077F12C /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248F2451F24EA550077F12C /* PageContentViewController.swift */; };
 		E25AF2541F093F4700872507 /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AF2531F093F4700872507 /* Int+Random.swift */; };
 		E27608811EC89F71004E5CFD /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27608801EC89F71004E5CFD /* BattleViewController.swift */; };
 		E27608841EC8A056004E5CFD /* PointsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27608831EC8A056004E5CFD /* PointsCalculator.swift */; };
@@ -68,6 +70,8 @@
 		E22DA9D71F127C69007B41D6 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		E22DA9DB1F127EA4007B41D6 /* Soldier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soldier.swift; sourceTree = "<group>"; };
 		E22DA9DD1F12834A007B41D6 /* Villain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Villain.swift; sourceTree = "<group>"; };
+		E248F2431F24E7E50077F12C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		E248F2451F24EA550077F12C /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		E25AF2531F093F4700872507 /* Int+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 		E27608801EC89F71004E5CFD /* BattleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 		E27608831EC8A056004E5CFD /* PointsCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsCalculator.swift; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 				E27608801EC89F71004E5CFD /* BattleViewController.swift */,
 				E22A7EAB1EF6C953005234DE /* StoreFrontViewController.swift */,
 				E20F02111EC3C09900AD3181 /* StoreViewController.swift */,
+				E248F2431F24E7E50077F12C /* TutorialViewController.swift */,
+				E248F2451F24EA550077F12C /* PageContentViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -348,9 +354,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E20F02121EC3C09900AD3181 /* StoreViewController.swift in Sources */,
+				E248F2441F24E7E50077F12C /* TutorialViewController.swift in Sources */,
 				E22A7EAC1EF6C953005234DE /* StoreFrontViewController.swift in Sources */,
 				E25AF2541F093F4700872507 /* Int+Random.swift in Sources */,
 				E22DA9DE1F12834A007B41D6 /* Villain.swift in Sources */,
+				E248F2461F24EA550077F12C /* PageContentViewController.swift in Sources */,
 				7E70C4A91EF648C300A2B5AF /* StoreManager.swift in Sources */,
 				E29EDF7F1ED9C73D00B8324A /* GameManager.swift in Sources */,
 				E215E6711EACFD7100A6878D /* SecondViewController.swift in Sources */,
