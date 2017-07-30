@@ -693,10 +693,10 @@
             </objects>
             <point key="canvasLocation" x="6088" y="884"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial View Controller-->
         <scene sceneID="LmR-Ba-iCh">
             <objects>
-                <viewController id="mB5-yY-dIz" sceneMemberID="viewController">
+                <viewController id="mB5-yY-dIz" customClass="TutorialViewController" customModule="STAR_WARS_CARDS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DpX-d7-lbu"/>
                         <viewControllerLayoutGuide type="bottom" id="QWz-LA-jLp"/>
@@ -704,12 +704,93 @@
                     <view key="view" contentMode="scaleToFill" id="dc2-Te-fXb">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyQ-Ub-3fK">
+                                <rect key="frame" x="324" y="998" width="186" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" red="1" green="0.99178825029999995" blue="0.99153221390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YyQ-Ub-3fK" firstAttribute="centerX" secondItem="dc2-Te-fXb" secondAttribute="centerX" id="D8L-FI-AET"/>
+                            <constraint firstItem="QWz-LA-jLp" firstAttribute="top" secondItem="YyQ-Ub-3fK" secondAttribute="bottom" constant="30" id="sjx-lb-SRb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sW-bU-6OI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4393" y="1647"/>
+            <point key="canvasLocation" x="4480" y="1644"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="XQd-3s-3GS">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="Rlw-WK-NeL" customClass="PageContentViewController" customModule="STAR_WARS_CARDS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hAQ-5W-k6A"/>
+                        <viewControllerLayoutGuide type="bottom" id="dYp-Fk-gTl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CB5-rK-y5B">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kwO-MD-kaL">
+                                <rect key="frame" x="217" y="258.5" width="400" height="597"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wWe-xj-hYT">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="597"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gBy-S3-hyy">
+                                                <rect key="frame" x="0.0" y="0.0" width="400" height="597"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a tutorial for Star Wars Cards" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of4-jw-hLd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="400" height="597"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="400" id="MgS-15-Off"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <color key="textColor" red="1" green="0.99178825029999995" blue="0.99153221390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duu-hF-Sqc">
+                                <rect key="frame" x="325.5" y="20" width="183.5" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="1" green="0.99178825029999995" blue="0.99153221390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kwO-MD-kaL" firstAttribute="centerY" secondItem="CB5-rK-y5B" secondAttribute="centerY" id="2Xc-4M-FRQ"/>
+                            <constraint firstItem="duu-hF-Sqc" firstAttribute="centerX" secondItem="CB5-rK-y5B" secondAttribute="centerX" id="M0T-Jt-q0B"/>
+                            <constraint firstItem="kwO-MD-kaL" firstAttribute="centerX" secondItem="CB5-rK-y5B" secondAttribute="centerX" id="jbh-T5-EOJ"/>
+                            <constraint firstItem="duu-hF-Sqc" firstAttribute="top" secondItem="hAQ-5W-k6A" secondAttribute="bottom" id="nKF-9w-7Z0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="instructionsLabel" destination="Of4-jw-hLd" id="h7b-UC-Dsl"/>
+                        <outlet property="titleLabel" destination="duu-hF-Sqc" id="SXk-C7-Uoq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTs-Hc-NIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4553.9568345323742" y="2340.6474820143885"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="IEM-RQ-CHU">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="MIt-Of-we2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGr-pM-f8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5227" y="2012"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jzg-Qh-ubc">

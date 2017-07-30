@@ -24,11 +24,11 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource, 
     pageViewController?.dataSource = self
     
     
-    let startingViewController: PageContentViewController = PageContentViewController()
+    let startingViewController: PageContentViewController = viewControllerAtIndex(0)!
     let viewControllers = [startingViewController]
     pageViewController?.setViewControllers(viewControllers, direction: .forward, animated: false, completion: nil)
     
-    let pvcFrame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height - 30)
+    let pvcFrame = CGRect(x: 0, y: 30, width: view.frame.size.width, height: view.frame.size.height - 120)
     pageViewController?.view.frame = pvcFrame
     addChildViewController(pageViewController!)
     view.addSubview(pageViewController!.view)
@@ -48,7 +48,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource, 
     }
     
     index -= 1
-    return PageContentViewController()
+    return viewControllerAtIndex(index)
   }
   
   func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
@@ -66,44 +66,35 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource, 
       return nil
     }
     
-    return PageContentViewController()
+    return viewControllerAtIndex(index)
   }
   
+  func viewControllerAtIndex(_ index: Int) -> PageContentViewController? {
+    if pageTitles.count == 0 || index >= pageTitles.count {
+      return nil
+    }
+    
+    // Create view controller and pass suitable data
+    let pageVC = storyboard?.instantiateViewController(withIdentifier: "PageContentViewController") as! PageContentViewController
+    pageVC.instructions = instructions[index]
+    pageVC.pageIndex = index
+    
+    return pageVC
+  }
   
+  func presentationCount(for pageViewController: UIPageViewController) -> Int {
+    return pageTitles.count
+  }
   
-//  - (PageContentViewController *)viewControllerAtIndex:(NSUInteger)index
-//  {
-//  if (([self.pageTitles count] == 0) || (index >= [self.pageTitles count])) {
-//  return nil;
-//  }
-//  
-//  // Create a new view controller and pass suitable data
-//  PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
-//  pageContentViewController.imageFile = self.pageImages[index];
-//  pageContentViewController.titleText = self.pageTitles[index];
-//  pageContentViewController.pageIndex = index;
-//  
-//  return pageContentViewController;
-//  }
-//  
-//  // Following two methods for page indication
-//  - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
-//  {
-//  return [self.pageTitles count];
-//  }
-//  
-//  - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
-//  {
-//  return 0;
-//  }
-//  
-//  #pragma mark - Start Again
-//  - (IBAction)startWalkthrough:(id)sender
-//  {
-//  PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
-//  NSArray *viewControllers = @[startingViewController];
-//  
-//  [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-//  }
+  func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+    return 0
+  }
+  
+  func startWalkThrough() {
+    let startController = viewControllerAtIndex(0)
+    let viewControllers = [startController]
+    
+    pageViewController?.setViewControllers(viewControllers as? [UIViewController], direction: .forward, animated: false, completion: nil)
+  }
   
 }
