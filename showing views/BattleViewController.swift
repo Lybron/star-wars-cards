@@ -11,45 +11,28 @@ import UIKit
 class BattleViewController: UIViewController {
   
   // MARK: Properties
-  
+  var gameView: UIView?
   
   // MARK: View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    placeTiles()
+    
+    let sideLength: CGFloat = min(self.view.frame.size.width - 46, self.view.frame.size.height - 46)
+    
+    let gameLayer = UIView(frame: CGRect(x: 0, y: 0, width: sideLength, height: sideLength))
+      
+    view.addSubview(gameLayer)
+    
+      gameView = gameLayer
   }
+  
+  
+  
+  
   
   // MARK: Set Tiles
   private func placeTiles() {
-    print("place tiles")
-    for stack in view.subviews {
-      print("found view")
-      
-      for view in stack.subviews {
-        print("stack sub: \(String(describing: view))")
-        
-        for sub in view.subviews {
-          print("sub sub: \(String(describing: sub))")
-          
-          guard let tile = sub as? UIView else {
-            print("is not grid tile")
-            continue
-          }
-          
-          let ships = StoreManager.shared.getItems(.ship)
-          
-          let shipView = UIImageView(frame: tile.frame)
-          shipView.image = ships[0].image
-          shipView.contentMode = .scaleAspectFit
-          
-          tile.addSubview(shipView)
-          print("added tile")
-        }
-      }
-      
-      
-      
-    }
+    
   }
   
 }

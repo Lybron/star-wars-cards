@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sDY-ep-bcB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sDY-ep-bcB">
     <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -209,9 +209,6 @@
                                         <state key="normal" title="Cards">
                                             <color key="titleColor" red="1" green="0.76947554930320006" blue="0.19988689727134956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="YyI-qa-nMj" kind="show" id="vGz-F7-AB6"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8k-Ux-BcO">
                                         <rect key="frame" x="0.0" y="216" width="247" height="72"/>
@@ -278,7 +275,7 @@
                                                     <color key="titleColor" red="1" green="0.4606042206" blue="0.19155152140000001" alpha="1" colorSpace="deviceRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="tyl-Ca-MQe" kind="show" id="StE-8o-3dh"/>
+                                                    <segue destination="7MQ-3q-moW" kind="show" id="lNp-xv-iH3"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -737,7 +734,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kwO-MD-kaL">
-                                <rect key="frame" x="217" y="258.5" width="400" height="597"/>
+                                <rect key="frame" x="217" y="257.5" width="400" height="597"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wWe-xj-hYT">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="597"/>
@@ -791,24 +788,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGr-pM-f8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5227" y="2012"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="jzg-Qh-ubc">
-            <objects>
-                <viewController id="YyI-qa-nMj" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wy7-Q1-kEV"/>
-                        <viewControllerLayoutGuide type="bottom" id="uks-ED-wR3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bn3-U0-uom">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3p0-Tt-WTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6410.9375" y="1863.8671874999998"/>
         </scene>
         <!--Store Front View Controller-->
         <scene sceneID="Nlp-61-fQi">
@@ -947,6 +926,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIu-Fk-4S7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1444" y="835"/>
+        </scene>
+        <!--Battle View Controller-->
+        <scene sceneID="Vkh-Wr-HZX">
+            <objects>
+                <viewController id="7MQ-3q-moW" customClass="BattleViewController" customModule="STAR_WARS_CARDS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s2h-Rk-Tjk"/>
+                        <viewControllerLayoutGuide type="bottom" id="v8q-83-wmm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pdb-8i-5gD" userLabel="Root View">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8N4-eo-3GH" userLabel="Game View">
+                                <rect key="frame" x="43" y="182" width="748" height="748"/>
+                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8N4-eo-3GH" secondAttribute="height" multiplier="1:1" id="E3C-DL-39e"/>
+                                    <constraint firstAttribute="height" constant="748" id="Qc7-S7-DPJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8N4-eo-3GH" firstAttribute="centerX" secondItem="Pdb-8i-5gD" secondAttribute="centerX" id="GiR-zg-Nu4"/>
+                            <constraint firstItem="8N4-eo-3GH" firstAttribute="centerY" secondItem="Pdb-8i-5gD" secondAttribute="centerY" id="VVB-Qb-cnR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xtg-6G-ffT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6130" y="22"/>
         </scene>
         <!--Battle View Controller-->
         <scene sceneID="bCl-ca-aFh">
@@ -1304,7 +1315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTg-bM-uAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6088" y="251"/>
+            <point key="canvasLocation" x="7009" y="207"/>
         </scene>
         <!--Store View Controller-->
         <scene sceneID="8h4-Pg-zSO">
