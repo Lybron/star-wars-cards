@@ -703,16 +703,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyQ-Ub-3fK">
-                                <rect key="frame" x="324" y="998" width="186" height="84"/>
+                                <rect key="frame" x="224" y="998" width="186" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="Restart">
+                                    <color key="titleColor" red="1" green="0.99178825029999995" blue="0.99153221390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sma-Fh-W9Z">
+                                <rect key="frame" x="469.5" y="998" width="95" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="Exit">
                                     <color key="titleColor" red="1" green="0.99178825029999995" blue="0.99153221390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YyQ-Ub-3fK" firstAttribute="centerX" secondItem="dc2-Te-fXb" secondAttribute="centerX" id="D8L-FI-AET"/>
+                            <constraint firstItem="YyQ-Ub-3fK" firstAttribute="centerX" secondItem="dc2-Te-fXb" secondAttribute="centerX" constant="-100" id="D8L-FI-AET"/>
+                            <constraint firstItem="Sma-Fh-W9Z" firstAttribute="centerX" secondItem="dc2-Te-fXb" secondAttribute="centerX" constant="100" id="FCa-1S-Fa1"/>
+                            <constraint firstItem="QWz-LA-jLp" firstAttribute="top" secondItem="Sma-Fh-W9Z" secondAttribute="bottom" constant="30" id="diF-Ed-3bW"/>
                             <constraint firstItem="QWz-LA-jLp" firstAttribute="top" secondItem="YyQ-Ub-3fK" secondAttribute="bottom" constant="30" id="sjx-lb-SRb"/>
                         </constraints>
                     </view>
@@ -779,7 +788,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTs-Hc-NIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4553.9568345323742" y="2340.6474820143885"/>
+            <point key="canvasLocation" x="4480" y="2337"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="IEM-RQ-CHU">
@@ -954,6 +963,9 @@
                             <constraint firstItem="8N4-eo-3GH" firstAttribute="centerY" secondItem="Pdb-8i-5gD" secondAttribute="centerY" id="VVB-Qb-cnR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gameView" destination="8N4-eo-3GH" id="Tta-fX-Byl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xtg-6G-ffT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

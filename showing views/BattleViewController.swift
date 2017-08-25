@@ -11,24 +11,15 @@ import UIKit
 class BattleViewController: UIViewController {
   
   // MARK: Properties
-  var gameView: UIView?
+  
+  @IBOutlet weak var gameView: UIView!
   
   // MARK: View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let sideLength: CGFloat = min(self.view.frame.size.width - 46, self.view.frame.size.height - 46)
-    
-    let gameLayer = UIView(frame: CGRect(x: 0, y: 0, width: sideLength, height: sideLength))
-      
-    view.addSubview(gameLayer)
-    
-      gameView = gameLayer
+    placeTiles()
   }
-  
-  
-  
-  
   
   // MARK: Set Tiles
   private func placeTiles() {
