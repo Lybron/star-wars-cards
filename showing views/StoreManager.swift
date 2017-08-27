@@ -35,6 +35,10 @@ struct StoreManager {
     }
   }
   
+  // MARK: Owned
+  
+  
+  // MARK: Store Info
   private func shipsData() -> [Spaceship] {
     var ships: [Spaceship] = []
     

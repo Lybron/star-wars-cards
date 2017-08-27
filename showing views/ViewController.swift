@@ -10,24 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  // MARK: IBOutlets
+  @IBOutlet weak var nameTextfield: UITextField!
+
+  // MARK: View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   }
   
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-  
-  
-  @IBOutlet weak var nameTextfield: UITextField!
-  
-  
+  // MARK: IBActions
   @IBAction func doneButtonPressed(_ sender: Any) {
     print("Nicholas is king")
   }
   
+  // MARK: Navigation
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "toSecondView" {
       _ = segue.destination as! SecondViewController

@@ -242,10 +242,27 @@
                             <constraint firstItem="O0p-ca-VIA" firstAttribute="top" secondItem="SZZ-Kl-F5Q" secondAttribute="bottom" constant="45" id="x3h-2o-AHO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="iMb-pl-ztJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rad-MC-M0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4096" y="835"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Psp-Ow-xGN">
+            <objects>
+                <navigationController storyboardIdentifier="MenuViewController" id="9M8-I2-FrA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RIx-bi-qpH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZXs-Fd-WBc" kind="relationship" relationship="rootViewController" id="bkW-Oa-jLr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZX-ZC-wqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4096" y="174"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="quB-kw-ckT">
@@ -919,7 +936,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sDY-ep-bcB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4ZT-0L-e7Y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4ZT-0L-e7Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.1775650433" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1333,7 +1350,7 @@
         <scene sceneID="8h4-Pg-zSO">
             <objects>
                 <collectionViewController id="nw2-pj-HnP" customClass="StoreViewController" customModule="STAR_WARS_CARDS" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jY7-LV-zkn">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="jY7-LV-zkn">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1411,4 +1428,7 @@
         <image name="Darth Vader" width="1600" height="800"/>
         <image name="Destroyer" width="1600" height="800"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bkW-Oa-jLr"/>
+    </inferredMetricsTieBreakers>
 </document>

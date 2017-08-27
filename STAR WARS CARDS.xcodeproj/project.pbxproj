@@ -28,6 +28,8 @@
 		E27608841EC8A056004E5CFD /* PointsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27608831EC8A056004E5CFD /* PointsCalculator.swift */; };
 		E27608861EC8A117004E5CFD /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27608851EC8A117004E5CFD /* UserProfile.swift */; };
 		E27608891EC8A918004E5CFD /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27608881EC8A918004E5CFD /* Session.swift */; };
+		E279DB231F530EE600F9ABBB /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279DB221F530EE600F9ABBB /* UserPreferences.swift */; };
+		E279DB251F53118300F9ABBB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279DB241F53118300F9ABBB /* Keys.swift */; };
 		E29EDF5D1ED1DEE700B8324A /* SWCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EDF5C1ED1DEE700B8324A /* SWCConstants.swift */; };
 		E29EDF5F1ED1E74F00B8324A /* GridTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EDF5E1ED1E74F00B8324A /* GridTile.swift */; };
 		E29EDF611ED9C24800B8324A /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EDF601ED9C24800B8324A /* Spaceship.swift */; };
@@ -77,6 +79,8 @@
 		E27608831EC8A056004E5CFD /* PointsCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsCalculator.swift; sourceTree = "<group>"; };
 		E27608851EC8A117004E5CFD /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		E27608881EC8A918004E5CFD /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		E279DB221F530EE600F9ABBB /* UserPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		E279DB241F53118300F9ABBB /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		E29EDF5C1ED1DEE700B8324A /* SWCConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCConstants.swift; sourceTree = "<group>"; };
 		E29EDF5E1ED1E74F00B8324A /* GridTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTile.swift; sourceTree = "<group>"; };
 		E29EDF601ED9C24800B8324A /* Spaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
@@ -177,9 +181,11 @@
 		E27608871EC8A11C004E5CFD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E279DB241F53118300F9ABBB /* Keys.swift */,
 				E29EDF7E1ED9C73D00B8324A /* GameManager.swift */,
 				7E70C4A81EF648C300A2B5AF /* StoreManager.swift */,
 				E27608851EC8A117004E5CFD /* UserProfile.swift */,
+				E279DB221F530EE600F9ABBB /* UserPreferences.swift */,
 				E27608881EC8A918004E5CFD /* Session.swift */,
 				E27608831EC8A056004E5CFD /* PointsCalculator.swift */,
 				E22DA9D51F127A2B007B41D6 /* SWCObject.swift */,
@@ -354,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E20F02121EC3C09900AD3181 /* StoreViewController.swift in Sources */,
+				E279DB251F53118300F9ABBB /* Keys.swift in Sources */,
 				E248F2441F24E7E50077F12C /* TutorialViewController.swift in Sources */,
 				E22A7EAC1EF6C953005234DE /* StoreFrontViewController.swift in Sources */,
 				E25AF2541F093F4700872507 /* Int+Random.swift in Sources */,
@@ -370,6 +377,7 @@
 				E27608841EC8A056004E5CFD /* PointsCalculator.swift in Sources */,
 				E22DA9D81F127C69007B41D6 /* Hero.swift in Sources */,
 				E27608891EC8A918004E5CFD /* Session.swift in Sources */,
+				E279DB231F530EE600F9ABBB /* UserPreferences.swift in Sources */,
 				E215E6451EACEF9000A6878D /* ViewController.swift in Sources */,
 				E29EDF5F1ED1E74F00B8324A /* GridTile.swift in Sources */,
 				E29EDF611ED9C24800B8324A /* Spaceship.swift in Sources */,
