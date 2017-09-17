@@ -15,7 +15,7 @@ struct UserProfile {
   var credits: Double?
   var currentScore: Double?
   var profileImageName: String?
-  
+    
   public init(name: String) {
     self.name = name
   }

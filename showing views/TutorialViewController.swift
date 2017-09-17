@@ -97,4 +97,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource, 
     pageViewController?.setViewControllers(viewControllers as? [UIViewController], direction: .forward, animated: false, completion: nil)
   }
   
+  @IBAction func exitButtonPressed(_ sender: UIButton) {
+    dismiss(animated: true, completion: nil)
+  }
 }

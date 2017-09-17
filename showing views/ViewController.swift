@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         }
         
         Session.shared.currentUser = UserProfile(name: text)
+        UserPreferencesManager.shared.saveUsername(text)
       }
     }
   }

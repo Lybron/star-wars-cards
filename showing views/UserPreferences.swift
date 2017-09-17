@@ -24,4 +24,7 @@ struct UserPreferencesManager {
     return defaults.value(forKey: Constants.UserKeys.usernameKey) as? String
   }
   
+  public func saveUsername(_ username: String) {
+    defaults.set(username, forKey: Constants.UserKeys.usernameKey)
+  }
 }

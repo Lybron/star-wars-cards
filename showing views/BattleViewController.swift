@@ -14,6 +14,9 @@ class BattleViewController: UIViewController {
   
   @IBOutlet weak var gameView: UIView!
   
+  private var tiles = [GridTile]()
+  private let TileMargin: CGFloat = 20.0
+  
   // MARK: View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,7 +26,9 @@ class BattleViewController: UIViewController {
   
   // MARK: Set Tiles
   private func placeTiles() {
-    
+    let gameBoard = UIView(frame: CGRect(x: 0.0 , y: 0.0 , width: gameView.frame.size.height, height: gameView.frame.size.height))
+    gameBoard.backgroundColor = .green
+    gameView.addSubview(gameBoard)
   }
   
 }

@@ -732,6 +732,9 @@
                                 <state key="normal" title="Exit">
                                     <color key="titleColor" red="1" green="0.99178825029999995" blue="0.99153221390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="exitButtonPressed:" destination="mB5-yY-dIz" eventType="touchUpInside" id="cud-78-bfY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -936,7 +939,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sDY-ep-bcB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4ZT-0L-e7Y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4ZT-0L-e7Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.1775650433" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1350,7 +1353,7 @@
         <scene sceneID="8h4-Pg-zSO">
             <objects>
                 <collectionViewController id="nw2-pj-HnP" customClass="StoreViewController" customModule="STAR_WARS_CARDS" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="jY7-LV-zkn">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jY7-LV-zkn">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
