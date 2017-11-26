@@ -38,6 +38,7 @@
 		E29EDF7F1ED9C73D00B8324A /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EDF7E1ED9C73D00B8324A /* GameManager.swift */; };
 		E2FF26D61FCB09380033B194 /* SWCIAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF26D51FCB09380033B194 /* SWCIAPManager.swift */; };
 		E2FF26D81FCB09870033B194 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF26D71FCB09870033B194 /* IAPManager.swift */; };
+		E2FF26DA1FCB10F80033B194 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF26D91FCB10F80033B194 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		E29EDF7E1ED9C73D00B8324A /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		E2FF26D51FCB09380033B194 /* SWCIAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCIAPManager.swift; sourceTree = "<group>"; };
 		E2FF26D71FCB09870033B194 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		E2FF26D91FCB10F80033B194 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				E20F02111EC3C09900AD3181 /* StoreViewController.swift */,
 				E248F2431F24E7E50077F12C /* TutorialViewController.swift */,
 				E248F2451F24EA550077F12C /* PageContentViewController.swift */,
+				E2FF26D91FCB10F80033B194 /* SettingsTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				E27608861EC8A117004E5CFD /* UserProfile.swift in Sources */,
 				E29EDF5D1ED1DEE700B8324A /* SWCConstants.swift in Sources */,
 				E27608841EC8A056004E5CFD /* PointsCalculator.swift in Sources */,
+				E2FF26DA1FCB10F80033B194 /* SettingsTableViewController.swift in Sources */,
 				E22DA9D81F127C69007B41D6 /* Hero.swift in Sources */,
 				E27608891EC8A918004E5CFD /* Session.swift in Sources */,
 				E279DB231F530EE600F9ABBB /* UserPreferences.swift in Sources */,
