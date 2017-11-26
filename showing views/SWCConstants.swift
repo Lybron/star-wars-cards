@@ -14,5 +14,9 @@ struct SWCConstants {
   struct GameBoard {
     static let sideLength = UIScreen.main.bounds.width - 20
   }
-  
+  struct IAP {
+    struct CharacterSet {
+      static let stormTrooperIdentifier = "com.StormTrooper.StarWarsCards.NicholasRamchatar"
+    }
+  }
 }

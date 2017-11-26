@@ -36,6 +36,8 @@
 		E29EDF691ED9C2B700B8324A /* STAR_WARS_CARDSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EDF681ED9C2B700B8324A /* STAR_WARS_CARDSTests.swift */; };
 		E29EDF771ED9C2C300B8324A /* STAR_WARS_CARDSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EDF761ED9C2C300B8324A /* STAR_WARS_CARDSUITests.swift */; };
 		E29EDF7F1ED9C73D00B8324A /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29EDF7E1ED9C73D00B8324A /* GameManager.swift */; };
+		E2FF26D61FCB09380033B194 /* SWCIAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF26D51FCB09380033B194 /* SWCIAPManager.swift */; };
+		E2FF26D81FCB09870033B194 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF26D71FCB09870033B194 /* IAPManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		E29EDF761ED9C2C300B8324A /* STAR_WARS_CARDSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STAR_WARS_CARDSUITests.swift; sourceTree = "<group>"; };
 		E29EDF781ED9C2C300B8324A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E29EDF7E1ED9C73D00B8324A /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		E2FF26D51FCB09380033B194 /* SWCIAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCIAPManager.swift; sourceTree = "<group>"; };
+		E2FF26D71FCB09870033B194 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 		E27608871EC8A11C004E5CFD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2FF26D41FCB08350033B194 /* IAP */,
 				E279DB241F53118300F9ABBB /* Keys.swift */,
 				E29EDF7E1ED9C73D00B8324A /* GameManager.swift */,
 				7E70C4A81EF648C300A2B5AF /* StoreManager.swift */,
@@ -222,6 +227,15 @@
 				E29EDF781ED9C2C300B8324A /* Info.plist */,
 			);
 			path = "STAR WARS CARDSUITests";
+			sourceTree = "<group>";
+		};
+		E2FF26D41FCB08350033B194 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				E2FF26D51FCB09380033B194 /* SWCIAPManager.swift */,
+				E2FF26D71FCB09870033B194 /* IAPManager.swift */,
+			);
+			name = IAP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +380,7 @@
 				E25AF2541F093F4700872507 /* Int+Random.swift in Sources */,
 				E22DA9DE1F12834A007B41D6 /* Villain.swift in Sources */,
 				E248F2461F24EA550077F12C /* PageContentViewController.swift in Sources */,
+				E2FF26D61FCB09380033B194 /* SWCIAPManager.swift in Sources */,
 				7E70C4A91EF648C300A2B5AF /* StoreManager.swift in Sources */,
 				E29EDF7F1ED9C73D00B8324A /* GameManager.swift in Sources */,
 				E215E6711EACFD7100A6878D /* SecondViewController.swift in Sources */,
@@ -378,6 +393,7 @@
 				E22DA9D81F127C69007B41D6 /* Hero.swift in Sources */,
 				E27608891EC8A918004E5CFD /* Session.swift in Sources */,
 				E279DB231F530EE600F9ABBB /* UserPreferences.swift in Sources */,
+				E2FF26D81FCB09870033B194 /* IAPManager.swift in Sources */,
 				E215E6451EACEF9000A6878D /* ViewController.swift in Sources */,
 				E29EDF5F1ED1E74F00B8324A /* GridTile.swift in Sources */,
 				E29EDF611ED9C24800B8324A /* Spaceship.swift in Sources */,
