@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sDY-ep-bcB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sDY-ep-bcB">
     <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -977,10 +977,10 @@
             </objects>
             <point key="canvasLocation" x="2867.6258992805756" y="2336.8705035971225"/>
         </scene>
-        <!--Store Front View Controller-->
+        <!--Store-->
         <scene sceneID="Nlp-61-fQi">
             <objects>
-                <viewController id="6ig-NP-3ys" customClass="StoreFrontViewController" customModule="STAR_WARS_CARDS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Store" id="6ig-NP-3ys" customClass="StoreFrontViewController" customModule="STAR_WARS_CARDS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HDD-TG-Yda"/>
                         <viewControllerLayoutGuide type="bottom" id="HjB-dR-Ds7"/>
@@ -1517,33 +1517,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WO1-YQ-uu0">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="200" height="254"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="0AL-Lv-jKx" customClass="StoreCollectionViewCell" customModule="STAR_WARS_CARDS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="254"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Destroyer" translatesAutoresizingMaskIntoConstraints="NO" id="BDN-iK-WiP">
-                                            <rect key="frame" x="20" y="8" width="160" height="113.5"/>
+                                            <rect key="frame" x="20" y="8" width="160" height="183"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="160" id="Emh-Kw-x7c"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Destroyer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1F-La-er6">
-                                            <rect key="frame" x="35.5" y="129.5" width="130" height="25.5"/>
+                                            <rect key="frame" x="35" y="199" width="130" height="26"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000 XP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOm-B9-3iu">
-                                            <rect key="frame" x="59" y="159" width="83" height="21"/>
+                                            <rect key="frame" x="59" y="233" width="83" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -1552,15 +1552,15 @@
                                 </view>
                                 <constraints>
                                     <constraint firstItem="BDN-iK-WiP" firstAttribute="leading" secondItem="0AL-Lv-jKx" secondAttribute="leadingMargin" constant="12" id="BJz-vf-2ym"/>
-                                    <constraint firstItem="n1F-La-er6" firstAttribute="top" secondItem="BDN-iK-WiP" secondAttribute="bottom" constant="8" id="Bmp-Jh-Aop"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="BDN-iK-WiP" secondAttribute="trailing" constant="12" id="GrS-Sp-bUk"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="IOm-B9-3iu" secondAttribute="bottom" constant="12" id="Ih6-co-Wsr"/>
                                     <constraint firstItem="n1F-La-er6" firstAttribute="centerX" secondItem="0AL-Lv-jKx" secondAttribute="centerX" id="S1M-fo-Mkg"/>
-                                    <constraint firstItem="IOm-B9-3iu" firstAttribute="top" secondItem="n1F-La-er6" secondAttribute="bottom" constant="4" id="Wpf-y8-vfg"/>
+                                    <constraint firstItem="n1F-La-er6" firstAttribute="top" secondItem="BDN-iK-WiP" secondAttribute="bottom" constant="8" id="ZMm-ba-x3Q"/>
+                                    <constraint firstItem="IOm-B9-3iu" firstAttribute="top" secondItem="n1F-La-er6" secondAttribute="bottom" constant="8" id="d2c-Vh-RcI"/>
                                     <constraint firstItem="BDN-iK-WiP" firstAttribute="top" secondItem="0AL-Lv-jKx" secondAttribute="topMargin" id="fhz-U3-1qN"/>
                                     <constraint firstItem="IOm-B9-3iu" firstAttribute="centerX" secondItem="0AL-Lv-jKx" secondAttribute="centerX" id="mF9-7x-OCW"/>
+                                    <constraint firstAttribute="bottom" secondItem="IOm-B9-3iu" secondAttribute="bottom" id="vvx-ZD-KPG"/>
                                 </constraints>
-                                <size key="customSize" width="200" height="200"/>
+                                <size key="customSize" width="200" height="254"/>
                                 <connections>
                                     <outlet property="imageView" destination="BDN-iK-WiP" id="Bzy-As-46A"/>
                                     <outlet property="priceLabel" destination="IOm-B9-3iu" id="yKH-Zp-3WD"/>
@@ -1579,7 +1579,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dxX-vZ-As5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4647" y="3305"/>
+            <point key="canvasLocation" x="4646.7625899280583" y="3304.8561151079139"/>
         </scene>
     </scenes>
     <resources>
@@ -1591,6 +1591,6 @@
         <image name="Destroyer" width="1600" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bkW-Oa-jLr"/>
+        <segue reference="5Ci-Bv-0UX"/>
     </inferredMetricsTieBreakers>
 </document>

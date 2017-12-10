@@ -68,4 +68,8 @@ class StoreViewController: UICollectionViewController {
     collectionView.deselectItem(at: indexPath, animated: true)
   }
   
+  func buyItem() {
+    print("Buy Item")
+  }
+  
 }

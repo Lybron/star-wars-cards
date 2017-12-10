@@ -15,5 +15,4 @@ class StoreCollectionViewCell: UICollectionViewCell {
   @IBOutlet weak var titleLabel: UILabel!
   
   @IBOutlet weak var priceLabel: UILabel!
-  
-}
+  }

@@ -49,12 +49,16 @@ class StoreFrontViewController: UIViewController {
         switch button.tag {
           case 1:
             storeVC.category = .hero
+            storeVC.title = "Heroes"
           case 2:
             storeVC.category = .villain
+            storeVC.title = "Villains"
           case 3:
             storeVC.category = .ship
+            storeVC.title = "Ships"
           case 4:
             storeVC.category = .soldier
+            storeVC.title = "Soldiers & Items"
           default:
             break
         }
