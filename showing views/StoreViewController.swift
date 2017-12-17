@@ -64,12 +64,16 @@ class StoreViewController: UICollectionViewController {
   
   // MARK: Delegate
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let item = items[indexPath.row]
+    buyItem(item.name)
     
     collectionView.deselectItem(at: indexPath, animated: true)
   }
   
-  func buyItem() {
-    print("Buy Item")
+  func buyItem(_ name: String) {
+    let alert = UIAlertController(title: "Buy item", message: "Buying: \(name)", preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+    present(alert, animated: true, completion: nil)
   }
   
 }
