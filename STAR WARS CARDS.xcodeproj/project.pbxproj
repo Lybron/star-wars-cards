@@ -21,6 +21,7 @@
 		E22DA9D81F127C69007B41D6 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DA9D71F127C69007B41D6 /* Hero.swift */; };
 		E22DA9DC1F127EA4007B41D6 /* Soldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DA9DB1F127EA4007B41D6 /* Soldier.swift */; };
 		E22DA9DE1F12834A007B41D6 /* Villain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DA9DD1F12834A007B41D6 /* Villain.swift */; };
+		E242FD4720026FE800EF9D06 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242FD4620026FE800EF9D06 /* TileView.swift */; };
 		E248F2441F24E7E50077F12C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248F2431F24E7E50077F12C /* TutorialViewController.swift */; };
 		E248F2461F24EA550077F12C /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248F2451F24EA550077F12C /* PageContentViewController.swift */; };
 		E25AF2541F093F4700872507 /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AF2531F093F4700872507 /* Int+Random.swift */; };
@@ -75,6 +76,7 @@
 		E22DA9D71F127C69007B41D6 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		E22DA9DB1F127EA4007B41D6 /* Soldier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soldier.swift; sourceTree = "<group>"; };
 		E22DA9DD1F12834A007B41D6 /* Villain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Villain.swift; sourceTree = "<group>"; };
+		E242FD4620026FE800EF9D06 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		E248F2431F24E7E50077F12C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		E248F2451F24EA550077F12C /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		E25AF2531F093F4700872507 /* Int+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				7E70C4A41EF6437200A2B5AF /* StoreCollectionViewCell.swift */,
 				E29EDF5E1ED1E74F00B8324A /* GridTile.swift */,
+				E242FD4620026FE800EF9D06 /* TileView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				E27608891EC8A918004E5CFD /* Session.swift in Sources */,
 				E279DB231F530EE600F9ABBB /* UserPreferences.swift in Sources */,
 				E2FF26D81FCB09870033B194 /* IAPManager.swift in Sources */,
+				E242FD4720026FE800EF9D06 /* TileView.swift in Sources */,
 				E215E6451EACEF9000A6878D /* ViewController.swift in Sources */,
 				E29EDF5F1ED1E74F00B8324A /* GridTile.swift in Sources */,
 				E29EDF611ED9C24800B8324A /* Spaceship.swift in Sources */,

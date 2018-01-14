@@ -30,7 +30,7 @@ class ViewController: UIViewController {
       _ = segue.destination as! SecondViewController
       
       if let text = nameTextfield.text {
-        guard text.characters.count > 0 else {
+        guard text.count > 0 else {
           return
         }
         
